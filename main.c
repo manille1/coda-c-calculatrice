@@ -18,22 +18,30 @@ int main()
 
 	if(operateurs='+')
 	{
+		int resultat=nb_1+nb_2
 		printf("addition\n");
+		
 	}
 	else if(operateurs='-')
 	{
+		int resultat=nb_1-nb_2
 		printf("soustraction\n");
+		
 	}
 	else if(operateurs='*')
 	{
+		int résulat=nb_1*nb_2
 		printf("multiplication\n");
+		
 	}
 	else if(operateurs='/')
 	{
+		int resultat=nb_1/nb_2
 		printf("division\n");
 	}
 	else if(operateurs='%')
 	{
+		int resultat=nb_1%nb_2
 		printf("modulo\n");
 	}
 	else
