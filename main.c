@@ -16,35 +16,50 @@ int main()
 	printf("Maintenant saisissez votre second nombre.\n");
 	scanf("%d", &nb_2);
 
-	if(operateurs='+')
+	if(operateurs='+')                          // ADDITION
 	{
 		int resultat=nb_1+nb_2
 		printf("addition\n");
 		
 	}
-	else if(operateurs='-')
+	else if(operateurs='-')                     //SOUSTRACTION
 	{
 		int resultat=nb_1-nb_2
 		printf("soustraction\n");
 		
 	}
-	else if(operateurs='*')
+	else if(operateurs='*')                     //MULTIPLICATION
 	{
-		int résulat=nb_1*nb_2
-		printf("multiplication\n");
+		if(nb_1=0||nb_2=0)
+		{
+			printf("Vous ne pouvez pas diviser par 0.");
+		}
+		else
+		{
+			int résulat=nb_1*nb_2
+			printf("multiplication\n");
+		}
 		
 	}
-	else if(operateurs='/')
+	else if(operateurs='/')                     //DIVISION
 	{
-		int resultat=nb_1/nb_2
+		double resultat=nb_1/nb_2
 		printf("division\n");
 	}
-	else if(operateurs='%')
+	else if(operateurs='%')                     //MODULO
 	{
-		int resultat=nb_1%nb_2
+		if(nb_1=0||nb_2=0)
+		{
+			printf("Vous ne pouvez pas diviser par 0.");
+		}
+		else
+		{
+			int resultat=nb_1%nb_2
 		printf("modulo\n");
-	}
-	else
+		}
+		
+	} 
+	else                                        //AUTRES
 	{
 		printf("L'opérateur n'est pas reconnu\n");
 	}
