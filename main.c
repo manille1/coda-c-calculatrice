@@ -16,46 +16,48 @@ int main()
 	printf("Maintenant saisissez votre second nombre.\n");
 	scanf("%d", &nb_2);
 
-	if(operateurs='+')                          // ADDITION
+	if(operateurs=='+')                          // ADDITION
 	{
-		int resultat=nb_1+nb_2
+		int resultat=nb_1+nb_2;
 		printf("addition\n");
-		
+		printf("%d %c %d = %d\n", nb_1, operateurs, nb_2, resultat);
 	}
-	else if(operateurs='-')                     //SOUSTRACTION
+	else if(operateurs=='-')                     //SOUSTRACTION
 	{
-		int resultat=nb_1-nb_2
+		int resultat=nb_1-nb_2;
 		printf("soustraction\n");
-		
+		printf("%d %c %d = %d\n", nb_1, operateurs, nb_2, resultat);
 	}
-	else if(operateurs='*')                     //MULTIPLICATION
+	else if(operateurs=='*')                     //MULTIPLICATION
 	{
-		if(nb_1=0||nb_2=0)
+		int resultat=nb_1*nb_2;
+		printf("multiplication\n");
+		printf("%d %c %d = %d\n", nb_1, operateurs, nb_2, resultat);
+	}
+	else if(operateurs=='/')                     //DIVISION
+	{
+		if(nb_2==0)
 		{
-			printf("Vous ne pouvez pas diviser par 0.");
+			printf("Vous ne pouvez pas diviser par 0.\n");
 		}
 		else
 		{
-			int résulat=nb_1*nb_2
-			printf("multiplication\n");
+			double resultat=nb_1/nb_2;
+			printf("division\n");
+			printf("%d %c %d = %.2f\n", nb_1, operateurs, nb_2, resultat);
 		}
-		
 	}
-	else if(operateurs='/')                     //DIVISION
+	else if(operateurs=='%')                     //MODULO
 	{
-		double resultat=nb_1/nb_2
-		printf("division\n");
-	}
-	else if(operateurs='%')                     //MODULO
-	{
-		if(nb_1=0||nb_2=0)
+		if(nb_2==0)
 		{
-			printf("Vous ne pouvez pas diviser par 0.");
+			printf("Vous ne pouvez pas calculer le modulo par 0.\n");
 		}
 		else
 		{
-			int resultat=nb_1%nb_2
-		printf("modulo\n");
+			int resultat=nb_1%nb_2;
+			printf("modulo\n");
+			printf("%d %c %d = %d\n", nb_1, operateurs, nb_2, resultat);
 		}
 		
 	} 
