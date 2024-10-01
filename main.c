@@ -65,4 +65,5 @@ int main()
 	{
 		printf("L'opérateur n'est pas reconnu\n");
 	}
+	exit(0);
 }
